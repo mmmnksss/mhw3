@@ -1,0 +1,311 @@
+body {
+    margin: 0px;
+}
+
+nav {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    background-color: rgb(73, 99, 185);
+}
+
+.button {
+    font-size: 20px;
+    font-weight: lighter;
+    color: whitesmoke;
+    border: 1px solid white;
+    background-color: rgb(80, 145, 80);
+    padding: 5px 10px;
+    margin: 10px;
+    border-radius: 10px;
+
+}
+
+.button:hover {
+    background-color: green;
+}
+
+.button:active {
+    background-color: lightgreen;
+}
+
+header {
+    height: 500px;
+    display: flex;
+    background-image: url("media/overlay.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+#overlay {
+    background-color: rgba(0, 0, 0, .3);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+}
+
+#title {
+    font-size: 48px;
+    text-align: center;
+    color: white;
+    z-index: 1;
+    max-width: 780px;
+}
+
+#propic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: -50px;
+}
+
+#pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: 2px solid white;
+    z-index: 1;
+}
+
+#name {
+    color: black;
+    font-weight: bold;
+    font-size: 24px;
+    margin: 3px;
+}
+
+#upd {
+    color: grey;
+    font-size: 18px;
+}
+
+.button,
+#name,
+#upd,
+footer p {
+    font-family: 'Arial', sans-serif;
+}
+
+footer {
+    height: 150px;
+    width: vw;
+    background-color: rgb(31, 31, 31);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+footer p {
+    color: white;
+    font-weight: lighter;
+    font-size: 18px;
+    text-align: center;
+}
+
+#wikiLicense {
+    font-size: 10px;
+    max-width: 480px;
+}
+
+#main {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#article {
+    display: flex;
+}
+
+.n {
+    font-size: 38px;
+    color: darkgrey;
+    border-radius: 5px;
+    margin-right: 40px;
+    margin-bottom: 120px;
+}
+
+.contents {
+    width: 66.67vw;
+    border-radius: 5px;
+    margin-bottom: 120px;
+}
+
+#title,
+.n,
+.city_name,
+.mark,
+.review,
+.catchphrase {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.mark,
+.review,
+.catchphrase {
+    margin-bottom: 20px;
+}
+
+.city_name {
+    font-size: 38px;
+    font-style: normal;
+    color: black;
+}
+
+.mark {
+    font-size: 20px;
+    color: rgb(80, 145, 80);
+}
+
+.review {
+    font-size: 16px;
+}
+
+.photo {
+    width: 66.67vw;
+    margin-top: 20px;
+    height: 450px;
+    object-fit: cover;
+}
+
+.city_name:hover {
+    background-color: rgb(80, 145, 80);
+}
+
+#menu {
+    display: none;
+}
+
+#menu div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    justify-content: space-around;
+    line-height: 30px;
+    font-family: Helvetica, sans-serif;
+    width: 75vw;
+}
+
+#wikiSearch span,
+#spotifySearch span {
+    text-align: center;
+}
+
+#wikiResults {
+    text-align: justify;
+}
+
+#spotifyResults {
+    max-width: 1300px;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.track {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.track img {
+    border-radius: 15px;
+    max-height: 300px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.track a {
+    margin: 10px 0;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Helvetica', sans-serif;
+    background-color: rgb(30 215 96);
+    color: rgb(25 20 20);
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+@media (max-width: 1000px) {
+    .photo {
+        height: 400px;
+    }
+}
+
+@media (max-width: 900px) {
+    #spotifyResults {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 750px) {
+    .photo {
+        height: 300px;
+    }
+}
+
+
+@media (max-width: 500px) {
+    #menu {
+        display: block;
+        margin: 10px 0px;
+    }
+
+    .button {
+        display: none;
+    }
+
+    #title {
+        font-size: 56px;
+    }
+
+    .contents {
+        width: 80vw;
+    }
+
+    .n {
+        margin-right: 10px;
+    }
+
+    .review,
+    .catchphrase {
+        font-size: 18px;
+        line-height: 1.4;
+    }
+
+    .photo {
+        width: 80vw;
+        height: 250px;
+    }
+
+    #spotifyResults {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
